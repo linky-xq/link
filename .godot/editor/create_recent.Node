@@ -1,0 +1,14 @@
+Button
+Sprite2D
+AudioStreamPlayer2D
+StaticBody2D
+Area2D
+CollisionShape2D
+GridContainer
+Label
+ColorRect
+MarginContainer
+VBoxContainer
+Node2D
+Control
+LineEdit
