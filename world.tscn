@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://dcf5gqcu21l4f"]
+[gd_scene load_steps=19 format=4 uid="uid://dcf5gqcu21l4f"]
 
 [ext_resource type="Script" uid="uid://t7y3q6clfx4u" path="res://Scenes/Maps/world.gd" id="1_k3n1d"]
 [ext_resource type="Script" uid="uid://bmdlnbjwjkibt" path="res://Scripts/Grid/grid_manager.gd" id="1_pkg7o"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://coqytbmdqpubf" path="res://Scenes/Maps/static_body_2d.gd" id="8_wse8f"]
 [ext_resource type="AnimationNodeBlendTree" uid="uid://c050x5reelfn" path="res://Resources/Animations/base_chara_animtree.tres" id="9_udxuc"]
 [ext_resource type="Script" uid="uid://imc1h1crwmx7" path="res://Scenes/Maps/area_2d.gd" id="10_ikiii"]
+[ext_resource type="Texture2D" uid="uid://clolt0da1hneb" path="res://Graphics/CollisionTiles/actor.png" id="11_2o6r5"]
 [ext_resource type="PackedScene" uid="uid://ckexbg1rl6ibu" path="res://tiletrigger.tscn" id="12_cbp6q"]
 [ext_resource type="Script" uid="uid://dryv7q74v212p" path="res://Scenes/Maps/button.gd" id="12_k3n1d"]
 
@@ -1207,6 +1208,8 @@ offset_left = 120.0
 offset_top = 201.0
 offset_right = 128.0
 offset_bottom = 209.0
+text = "pad"
+icon = ExtResource("11_2o6r5")
 script = ExtResource("12_k3n1d")
 
 [node name="tiletrigger" parent="." instance=ExtResource("12_cbp6q")]
@@ -1231,7 +1234,7 @@ offset_left = 168.0
 offset_top = 171.0
 offset_right = 281.0
 offset_bottom = 194.0
-text = "then wrtie link"
+text = "then write link"
 
 [connection signal="body_entered" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_exited"]

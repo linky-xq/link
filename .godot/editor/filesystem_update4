@@ -1,0 +1,11 @@
+res://Resources/Animations/base_chara_animtree.tres
+res://sprite_2d.tscn
+res://sprite_2d.gd
+res://next_button.gd
+res://button.gd
+res://node_2d.gd
+res://Scenes/Maps/world4.tscn
+res://world2.tscn
+res://Scripts/Grid/grid_manager.gd
+res://Scenes/Maps/world.gd
+res://world.tscn

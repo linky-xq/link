@@ -1,8 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1763125911
+::res://::1763127103
 582234317_2619182635110009_283024632643137009_n.jpg::CompressedTexture2D::5366358232552243006::1763125112::1763125094::1::::<><><>0<>0<>81fb9b28351dbbcb8ee5d131e3fee768<>res://.godot/imported/582234317_2619182635110009_283024632643137009_n.jpg-4b35cc14b2d6a3851ed0abe7a7ed2e6f.ctex::
 area_2d.gd::GDScript::8073388733330495617::1763109671::0::1::::<>Area2D<><>0<>0<><>::
-button.gd::GDScript::127103110201023745::1763120422::0::1::::<>Button<><>0<>0<><>::
+button.gd::GDScript::127103110201023745::1763126966::0::1::::<>Button<><>0<>0<><>::
 do-re-mi-fa-so-la-ti-do-104110.mp3::AudioStreamMP3::2335809983301725617::1763120356::1763120356::1::::<><><>0<>0<>ff0af735765d68dc1cf8135da632cdb2<>res://.godot/imported/do-re-mi-fa-so-la-ti-do-104110.mp3-ca0183b5e84cbef976f15a01a56d06c7.mp3str::
 export_presets.cfg::TextFile::-1::1763086941::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D::1173201585807753488::1763086941::1763086941::1::::<><><>0<>0<>353bd2f17049c4b123d449e242e18c3a<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
@@ -14,7 +14,10 @@ pad.gd::GDScript::539144149424959153::1763124719::0::1::::<>Control<><>0<>0<><>:
 pad.tscn::PackedScene::2898525295048062354::1763124628::0::1::::<><><>0<>0<><>::uid://hxfvi6t5kypd::::res://pad.gd
 passwordPad.tscn::PackedScene::3559915279743689548::1763103668::0::1::::<><><>0<>0<><>::uid://bupsskrjut8x4::::res://password_pad.gd<>uid://vwmpi5st1if5::::res://Graphics/CollisionTiles/obstacle.png
 password_pad.gd::GDScript::3822288824856337639::1763108646::0::1::::<>Node2D<><>0<>0<><>::
-README.md::TextFile::-1::1763086941::0::1::::<><><>0<>0<><>::
+next_button.gd::GDScript::772602272616517282::1763126508::0::1::::<>Control<><>0<>0<><>::
+node_2d.gd::GDScript::3098779790978244167::1763127103::0::1::::<>Node2D<><>0<>0<><>::
+sprite_2d.gd::GDScript::1831717228726996441::1763126928::0::1::::<>Control<><>0<>0<><>::
+sprite_2d.tscn::PackedScene::5853659104221279269::1763127103::0::1::::<><><>0<>0<><>::uid://ciprevjryej55::::res://582234317_2619182635110009_283024632643137009_n.jpg<>uid://1dkd6dpub1td::::res://sprite_2d.gd<>uid://b2tmtk6kkd2p::::res://button.gd<>uid://bkfcpkxkqrgix::::res://node_2d.gd
 tiletrigger.gd::GDScript::7055717676605208820::1763124326::0::1::::<>Area2D<><>0<>0<><>::
 tiletrigger.tscn::PackedScene::5484385947503643934::1763109107::0::1::::<><><>0<>0<><>::uid://c7r3v0ajptwwi::::res://tiletrigger.gd
 world2.tscn::PackedScene::1457772304133684259::1763124719::0::1::::<><><>0<>0<><>::uid://t7y3q6clfx4u::::res://Scenes/Maps/world.gd<>uid://bmdlnbjwjkibt::::res://Scripts/Grid/grid_manager.gd<>uid://dd4o7n2bo12h::::res://Graphics/Tilesets/tileset_dungeon.png<>uid://coqytbmdqpubf::::res://Scenes/Maps/static_body_2d.gd<>uid://qykpujgq80e3::::res://icon.png<>uid://d2wiwwi26fcjm::::res://Scenes/Maps/collision_shape_2d.gd<>uid://di7oeuwuca0cy::::res://Scenes/Maps/character_body_2d.gd<>uid://n4h41o7d7rbs::::res://Graphics/Pawns/actor_man.png<>uid://l4teq1kjwlso::::res://Scripts/Pawns/Characters/character_skin.gd<>uid://b3y87y7fcp23i::::res://Resources/Animations/base_chara_anim.res<>uid://c050x5reelfn::::res://Resources/Animations/base_chara_animtree.tres<>uid://imc1h1crwmx7::::res://Scenes/Maps/area_2d.gd<>uid://dryv7q74v212p::::res://Scenes/Maps/button.gd<>uid://8jqpjh0fxy0x::::res://do-re-mi-fa-so-la-ti-do-104110.mp3
@@ -31,13 +34,13 @@ actor_man.png::CompressedTexture2D::972800117828347304::1763086941::1763086941::
 ::res://Graphics/Tilesets/::1763125525
 tileset_dungeon.png::CompressedTexture2D::218547160139508517::1763086941::1763086941::1::::<><><>0<>0<>dadb9bccd7bd02fb975964e45af51938<>res://.godot/imported/tileset_dungeon.png-e97ee6881c0dfcf04d9957193bc2a987.ctex::
 ::res://Resources/::1763125525
-::res://Resources/Animations/::1763125525
+::res://Resources/Animations/::1763126101
 base_chara_anim.res::AnimationLibrary::4403315488046308708::1763108570::0::1::::<><><>0<>0<><>::
-base_chara_animtree.tres::AnimationNodeBlendTree::193854540917278947::1763123471::0::1::::<><><>0<>0<><>::
+base_chara_animtree.tres::AnimationNodeBlendTree::193854540917278947::1763126101::0::1::::<><><>0<>0<><>::
 ::res://Resources/CollisionTiles/::1763125525
 collision_tiles.tres::TileSet::3598514159797638491::1763086941::0::1::::<><><>0<>0<><>::uid://clolt0da1hneb::::res://Graphics/CollisionTiles/actor.png<>uid://vwmpi5st1if5::::res://Graphics/CollisionTiles/obstacle.png<>uid://fhhrc5ktpq0l::::res://Graphics/CollisionTiles/event.png
 ::res://Scenes/::1763125525
-::res://Scenes/Maps/::1763125525
+::res://Scenes/Maps/::1763127193
 area_2d.gd::GDScript::586451554722870366::1763108645::0::1::::<>Area2D<><>0<>0<><>::
 button.gd::GDScript::8403350552430466901::1763116789::0::1::::<>Button<><>0<>0<><>::
 character_body_2d.gd::GDScript::7787691154751935328::1763108570::0::1::::<>CharacterBody2D<><>0<>0<><>::
@@ -49,6 +52,7 @@ nextbutton.gd::GDScript::8401472723613976951::1763108645::0::1::::<>Node<><>0<>0
 node.gd::GDScript::2281155646192217669::1763086941::0::1::::<>Pawn<><>0<>0<><>::
 node_2d.gd::GDScript::2163678626889472499::1763086941::0::1::::<>Node2D<><>0<>0<><>::
 object_2.gd::GDScript::4160960252755074370::1763086941::0::1::::<>Pawn<><>0<>0<><>::
+pngtree-pixel-art-wooden-play-button-icon-graphic-design-vector-png-image_16283392.png::CompressedTexture2D::422114771766371913::1763127193::1763127193::1::::<><><>0<>0<>f2c2efb0f08258c9aed8fb4991260dd6<>res://.godot/imported/pngtree-pixel-art-wooden-play-button-icon-graphic-design-vector-png-image_16283392.png-a60825c101b09eda2f541076d42ae0d2.ctex::
 puzzlemanger.gd::GDScript::4736633704370029814::1763108646::0::1::::<>Node2D<><>0<>0<><>::
 spot_1.gd::GDScript::67173942974882266::1763108646::0::1::::<>Area2D<><>0<>0<><>::
 sprite_2d.gd::GDScript::4593057979102875407::1763086941::0::1::::<>Sprite2D<><>0<>0<><>::

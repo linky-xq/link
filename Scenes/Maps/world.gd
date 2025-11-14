@@ -1,11 +1,11 @@
 extends Node2D
 
 var current_level=1
-# Called when the node enters the scene tree for the first time.
 
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
+
 func _process(delta: float) -> void:
     pass
 
@@ -13,24 +13,19 @@ func _process(delta: float) -> void:
 
 
 func _on_spot_1_body_entered(body: Node2D) -> void:
-    pass # Replace with function body.
+    pass 
 
 
 func _on_spot_1_body_exited(body: Node2D) -> void:
-    pass # Replace with function body.
+    pass
 
 
 func _on_nextbutton_pressed() -> void:
-    pass # Replace with function body.
+    pass 
 
 
 
 
-# ... other code or variables ...
-
-
-
-# ... other functions ...
 
 
 func _on_Button_pressed() -> void:
@@ -39,7 +34,7 @@ func _on_Button_pressed() -> void:
 
 
 
-    # world.gd
+   
 
 
 

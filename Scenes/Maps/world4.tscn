@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://c2bdnamplmd76"]
+[gd_scene load_steps=19 format=4 uid="uid://c2bdnamplmd76"]
 
 [ext_resource type="Script" uid="uid://t7y3q6clfx4u" path="res://Scenes/Maps/world.gd" id="1_58qoc"]
 [ext_resource type="Script" uid="uid://bmdlnbjwjkibt" path="res://Scripts/Grid/grid_manager.gd" id="2_h4jam"]
@@ -11,6 +11,7 @@
 [ext_resource type="AnimationNodeBlendTree" uid="uid://c050x5reelfn" path="res://Resources/Animations/base_chara_animtree.tres" id="9_x4nl2"]
 [ext_resource type="Script" uid="uid://imc1h1crwmx7" path="res://Scenes/Maps/area_2d.gd" id="10_u3xs5"]
 [ext_resource type="Script" uid="uid://dryv7q74v212p" path="res://Scenes/Maps/button.gd" id="11_8ypac"]
+[ext_resource type="Texture2D" uid="uid://clolt0da1hneb" path="res://Graphics/CollisionTiles/actor.png" id="11_h4jam"]
 [ext_resource type="PackedScene" uid="uid://ckexbg1rl6ibu" path="res://tiletrigger.tscn" id="12_uvkt2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_08va7"]
@@ -1207,6 +1208,8 @@ offset_left = 120.0
 offset_top = 201.0
 offset_right = 128.0
 offset_bottom = 209.0
+text = "pad"
+icon = ExtResource("11_h4jam")
 script = ExtResource("11_8ypac")
 
 [node name="tiletrigger" parent="." instance=ExtResource("12_uvkt2")]
@@ -1227,14 +1230,14 @@ offset_bottom = 170.0
 text = "if Z=28"
 
 [node name="Label3" type="Label" parent="."]
-offset_left = 168.0
+offset_left = 163.0
 offset_top = 171.0
-offset_right = 281.0
+offset_right = 276.0
 offset_bottom = 194.0
-text = "then wrtie link"
+text = "then write link"
 
 [connection signal="body_entered" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_exited"]
+[connection signal="pressed" from="botton2" to="." method="_on_botton_2_pressed"]
 [connection signal="pressed" from="botton2" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="botton2" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="botton2" to="." method="_on_botton_2_pressed"]

@@ -1,4 +1,7 @@
+Node2D
 Button
+TextureRect
+Control
 Sprite2D
 AudioStreamPlayer2D
 StaticBody2D
@@ -9,6 +12,3 @@ Label
 ColorRect
 MarginContainer
 VBoxContainer
-Node2D
-Control
-LineEdit

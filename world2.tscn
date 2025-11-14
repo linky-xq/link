@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://u1fkdgatiq08"]
+[gd_scene load_steps=23 format=4 uid="uid://u1fkdgatiq08"]
 
 [ext_resource type="Script" uid="uid://t7y3q6clfx4u" path="res://Scenes/Maps/world.gd" id="1_hg5vs"]
 [ext_resource type="Script" uid="uid://bmdlnbjwjkibt" path="res://Scripts/Grid/grid_manager.gd" id="2_7r24r"]
@@ -12,8 +12,10 @@
 [ext_resource type="AnimationLibrary" uid="uid://b3y87y7fcp23i" path="res://Resources/Animations/base_chara_anim.res" id="10_ryt4s"]
 [ext_resource type="AnimationNodeBlendTree" uid="uid://c050x5reelfn" path="res://Resources/Animations/base_chara_animtree.tres" id="11_kamru"]
 [ext_resource type="Script" uid="uid://imc1h1crwmx7" path="res://Scenes/Maps/area_2d.gd" id="12_aahbd"]
+[ext_resource type="Texture2D" uid="uid://clolt0da1hneb" path="res://Graphics/CollisionTiles/actor.png" id="13_7gfau"]
 [ext_resource type="Script" uid="uid://dryv7q74v212p" path="res://Scenes/Maps/button.gd" id="13_tx3uu"]
 [ext_resource type="AudioStream" uid="uid://8jqpjh0fxy0x" path="res://do-re-mi-fa-so-la-ti-do-104110.mp3" id="14_fcnjm"]
+[ext_resource type="Texture2D" uid="uid://fhhrc5ktpq0l" path="res://Graphics/CollisionTiles/event.png" id="15_jaerl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aflc7"]
 texture = ExtResource("3_fcnjm")
@@ -1238,19 +1240,21 @@ offset_bottom = 252.0
 text = "do mi ri"
 
 [node name="do ri" type="Button" parent="."]
-offset_left = 87.0907
-offset_top = 217.90912
-offset_right = 95.0907
-offset_bottom = 225.90912
+offset_left = 82.0
+offset_top = 208.0
+offset_right = 106.0
+offset_bottom = 232.0
+icon = ExtResource("13_7gfau")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="do ri"]
 stream = ExtResource("14_fcnjm")
 
 [node name="Button" type="Button" parent="."]
-offset_left = 116.0
-offset_top = 216.0
-offset_right = 124.0
-offset_bottom = 224.0
+offset_left = 118.0
+offset_top = 209.0
+offset_right = 142.0
+offset_bottom = 233.0
+icon = ExtResource("15_jaerl")
 script = ExtResource("13_tx3uu")
 
 [connection signal="body_entered" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]

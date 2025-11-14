@@ -1,22 +1,19 @@
 extends Button
 
-# The path to your AudioStreamPlayer node relative to this Button node.
-# If the VoicePlayer is a sibling of the Button, you would use 'get_parent().get_node("VoicePlayer")'
-@onready var voice_player: AudioStreamPlayer = $"VoicePlayer"
+# --- CONFIGURATION ---
+# Change this path to the file path of the scene you want to load!
+const NEXT_SCENE_PATH = "res://Scenes/Maps/chess.tscn"
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-    # Check if the reference was successfully found
-    if !is_instance_valid(voice_player):
-        push_error("Error: AudioStreamPlayer 'VoicePlayer' not found! Check node path.")
+# --- SIGNAL CONNECTION ---
+# Connect the built-in 'pressed()' signal from the Button node to this function.
 
-# --- Connection Step (Connect 'pressed()' signal in the editor to this function) ---
-
-func _on_button_pressed():
-    # Check if the player is valid and the sound is not already playing
-    if is_instance_valid(voice_player) and not voice_player.is_playing():
-        voice_player.play()
-        print("Playing voice message.")
-    elif voice_player.is_playing():
-        # Optional: You can stop and restart the voice, or just let it finish.
-        print("Voice is already playing.")
+func _on_button_pressed() -> void:
+    print("Button pressed. Attempting to load scene: ", NEXT_SCENE_PATH)
+    
+    var error = get_tree().change_scene_to_file(NEXT_SCENE_PATH)
+    
+    if error != 0:
+        # If error code is not 0 (OK), print the error
+        print("!!! SCENE CHANGE FAILED! Godot Error Code: ", error)
+    else:
+        print("Scene loaded successfully.")
